@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Employee Registration Form</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+        }
+        .container {
+            width: 50%;
+            margin: auto;
+            border: 2px solid #ccc;
+            padding: 20px;
+            border-radius: 10px;
+            background-color: #f9f9f9;
+        }
+        h2 {
+            color: red;
+            text-align: center;
+        }
+        label {
+            display: block;
+            margin: 10px 0 5px;
+        }
+        input, select, textarea {
+            width: 100%;
+            padding: 8px;
+            margin-bottom: 10px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+        }
+        input[type="radio"],
+        input[type="checkbox"] {
+            width: auto;
+        }
+        .gender {
+            display: flex;
+            gap: 15px;
+        }
+        .languages {
+            display: flex;
+            flex-direction: column;
+        }
+        .buttons {
+            display: flex;
+            gap: 10px;
+        }
+        button {
+            padding: 10px;
+            border: none;
+            background-color: #4CAF50;
+            color: white;
+            cursor: pointer;
+            border-radius: 5px;
+        }
+        .logo{
+            width: 130px;
+        }
+        button[type="reset"] {
+            background-color: #d9534f;
+        }
+    </style>
+    <img src="./bird_2.jpg" alt="lumina creative" class="logo">
+
+</head>
+<body>
+
+    <div class="container">
+        <h2>Employee Registration Form</h2>
+
+        <form action="#" method="post">
+            
+            <label>Title:</label>
+            <div class="gender">
+                <input type="radio" name="gender" value="Mr."> Mr.
+                <input type="radio" name="gender" value="Mrs."> Mrs.
+                <input type="radio" name="gender" value="Ms."> Ms.
+            </div>
+
+            <label>First Name:</label>
+            <input type="text" name="first_name" placeholder="First Name">
+
+            <label>Last Name:</label>
+            <input type="text" name="last_name" placeholder="Last Name">
+
+            <label>Mail Address 1:</label>
+            <input type="text" name="mail_address1">
+
+            <label>Mail Address 2:</label>
+            <input type="text" name="mail_address2">
+
+            <label>City:</label>
+            <input type="text" name="city">
+
+            <label>State:</label>
+            <select name="state">
+                <option value="Gujarat">Gujarat</option>
+                <option value="Maharashtra">Maharashtra</option>
+                <option value="Rajasthan">Rajasthan</option>
+            </select>
+
+            <label>Zip:</label>
+            <input type="text" name="zip">
+
+            <label>Upload Photo:</label>
+            <input type="file" name="photo">
+
+            <label>Email:</label>
+            <input type="email" name="email">
+
+            <label>Mobile:</label>
+            <input type="text" name="mobile" placeholder="+91">
+
+            <label>Languages Known:</label>
+            <div class="languages">
+                <input type="checkbox" name="language" value="Gujarati"> Gujarati
+                <input type="checkbox" name="language" value="Hindi"> Hindi
+                <input type="checkbox" name="language" value="English"> English
+                <input type="checkbox" name="language" value="Marathi"> Marathi
+            </div>
+
+            <label>Additional Information:</label>
+            <textarea name="additional_info" rows="4" placeholder="Optional"></textarea>
+
+            <div class="buttons">
+                <button type="submit">Submit</button>
+                <button type="reset">Reset</button>
+            </div>
+
+        </form>
+    </div>
+
+</body>
+</html>
