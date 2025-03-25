@@ -3,73 +3,76 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.1/css/all.min.css">
-    <title>Samarth Portfolio</title>
-    <link rel="stylesheet" href="style.css">
-    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+    <title>Model Question Paper</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 20px;
+            line-height: 1.6;
+        }
+        .header {
+            text-align: center;
+            font-weight: bold;
+        }
+        .instructions {
+            margin-top: 20px;
+            margin-bottom: 20px;
+        }
+        .section {
+            margin-top: 20px;
+        }
+        .section h3 {
+            text-align: center;
+        }
+        .question {
+            margin-bottom: 15px;
+        }
+        .question-options {
+            margin-left: 20px;
+        }
+    </style>
 </head>
 <body>
-    <nav>
-        <div class="nav-container">
-            <div class="logo" data-aos="zoom-in" data-aos-duration="1000">
-                <span>Samarth</span>
+    <div class="header">
+        <h1>MODEL QUESTION PAPER FOR SUMMATIVE TEST - II</h1>
+        <h2>MATHEMATICS</h2>
+        <h3>CLASS - VIII</h3>
+    </div>
+
+    <p><strong>Maximum Marks:</strong> 20</p>
+
+    <div class="instructions">
+        <h3>General Instructions:</h3>
+        <ol>
+            <li>All questions are compulsory.</li>
+            <li>The question paper consists of 7 questions divided into 2 sections A and B.</li>
+            <li>Section A contains 4 questions of 2 marks each.</li>
+            <li>Section B contains 3 questions of 4 marks each.</li>
+        </ol>
+    </div>
+
+    <div class="section">
+        <h3>SECTION A</h3>
+
+        <div class="question">
+            <p><strong>Q1:</strong> What will be the product of (a<sup>2</sup>) x (2a<sup>22</sup>) x (4a<sup>26</sup>)?</p>
+            <div class="question-options">
+                <p>(a) 8a<sup>46</sup></p>
+                <p>(b) 8a<sup>48</sup></p>
+                <p>(c) 6a<sup>50</sup></p>
+                <p>(d) 8a<sup>50</sup></p>
             </div>
-            <div class="links">
-                <div class="link" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="100"><a href="#">Home</a></div>
-                <div class="link" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="200"><a href="#">About</a></div>
-                <div class="link" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="300"><a href="#">Skills</a></div>
-                <div class="link" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="400"><a href="#">Services</a></div>
-                <div class="link" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="500"><a href="#">Blogs</a></div>
-                <div class="link contact-btn" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="600"><a href="#">Contact Us</a></div>
-            </div>
-            <i class="fa-solid fa-bars hamburg" onclick="hamburg()"></i>
         </div>
-        <div class="dropdown">
-            <div class="links">
-                <a href="">Home</a>
-                <a href="">About</a>
-                <a href="">Skills</a>
-                <a href="">Services</a>
-                <a href="">Blogs</a>
-                <a href="">Contact Us</a>
-                <i class="fa-solid fa-xmark cancel" onclick="cancel()"></i>
+
+        <div class="question">
+            <p><strong>Q2:</strong> Water is oxidized to oxygen by:</p>
+            <div class="question-options">
+                <p>(a) H<sub>2</sub>O<sub>2</sub></p>
+                <p>(b) KMnO<sub>4</sub></p>
+                <p>(c) ClO<sub>2</sub></p>
+                <p>(d) Fluorine</p>
             </div>
         </div>
-    </nav>
-        <section>
-            <div class="main-container">
-                <div class="image" data-aos="zoom-in-right" data-aos-duration="2500">
-                    <img src="photo.jpg" alt="">
-                </div>
-                <div class="content">
-                    <h1 data-aos="fade-left" data-aos-duration="1000" data-aos-delay="800">Hey I'm <span>Samarth</span></h1>
-                    <div class="typewriter" data-aos="fade-right" data-aos-duration="1000" data-aos-delay="900">I'm a <span></span></div>
-                    <p data-aos="flip-up" data-aos-duration="1000" data-aos-delay="1000">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ratione, perferendis quas consectetur possimus maxime consequatur cupiditate eos dolorum molestias praesentium error exercitationem rem labore illo, in dolor, odio corporis excepturi?</p>
-                    <div class="social-links" data-aos="flip-down" data-aos-duration="1000" data-aos-delay="1200">
-                        <a href="#" ><i class="fa-brands fa-github"></i></a>
-                        <a href="#"><i class="fa-brands fa-facebook"></i></a>
-                        <a href="#"><i class="fa-brands fa-linkedin"></i></a>
-                        <a href="#"><i class="fa-brands fa-x-twitter"></i></a>
-                    </div>
-                    <div class="btn" data-aos="zoom-out-left" data-aos-duration="1000" data-aos-delay="1300">
-                        <button>Download CV</button>
-                    </div>
-                </div>
-            </div>
-        </section>
-        <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
-        <script>
-          AOS.init({offset:0});
-        </script>
-        <script>
-            function hamburg(){
-                const navbar = document.querySelector(".dropdown")
-                navbar.style.transform = "translateY(0px)"
-            }
-            function cancel(){
-                const navbar = document.querySelector(".dropdown")
-                navbar.style.transform = "translateY(-500px)"
-            }
-        </script>
+    </div>
 </body>
 </html>
