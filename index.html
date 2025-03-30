@@ -3,70 +3,99 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Paris Tourism - The City of Lights</title>
-    <link rel="stylesheet" href="css/style.css">
-    <link rel="icon" href="./images/logo.jpg" type="image/png">
+    <title>JavaScript Concepts</title>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <header>
-        <div class="logo-container">
-            <img src="images/effil.jpg" alt="Paris Logo" class="logo">
-            <h1>Paris - The City of Lights</h1>
-        </div>
-        <nav>
-            <ul>
-                <li><a href="index.html" class="active">Home</a></li>
-                <li><a href="heritage.html">Heritage</a></li>
-                <li><a href="hotel-booking.html">Hotel Booking</a></li>
-                <li><a href="gallery.html">Gallery</a></li>
-            </ul>
-        </nav>
-    </header>
+    <div class="container">
+        <header>
+            <h1>JavaScript Concepts Implementation</h1>
+        </header>
 
-    <main>
-        <section class="hero">
-            <img src="images/paris-hero.jpg" alt="Paris Skyline">
-            <div class="hero-text">
-                <h2>Discover the Magic of Paris</h2>
-                <p>Experience romance, culture, and history in Europe's most enchanting city</p>
+        <section class="section-calculator">
+            <h2>BMI Calculator</h2>
+            <div class="calculator">
+                <input type="number" id="weight" placeholder="Weight (kg)">
+                <input type="number" id="height" placeholder="Height (cm)">
+                <button onclick="calculateBMI()">Calculate</button>
+                <div id="bmi-result"></div>
             </div>
         </section>
 
-        <section class="intro">
-            <h2>Welcome to Paris</h2>
-            <p>Paris, France's capital, is a major European city and a global center for art, fashion, gastronomy and culture. Its picturesque 19th-century cityscape is crisscrossed by wide boulevards and the River Seine. Beyond such landmarks as the Eiffel Tower and the 12th-century, Gothic Notre-Dame cathedral, the city is known for its cafe culture and designer boutiques along the Rue du Faubourg Saint-Honoré.</p>
-            <p>Known as the "City of Light", Paris has been a center of learning and innovation for centuries. From the Louvre Museum to the charming streets of Montmartre, every corner of Paris tells a story.</p>
+        <section class="section-popups">
+            <h2>Pop-up Boxes</h2>
+            <div class="popup-buttons">
+                <button onclick="showAlert()">Show Alert</button>
+                <button onclick="showConfirm()">Show Confirm</button>
+                <button onclick="showPrompt()">Show Prompt</button>
+            </div>
+            <div id="prompt-result"></div>
         </section>
 
-        <section class="highlights">
-            <h2>Why Visit Paris?</h2>
-            <div class="highlight-cards">
-                <div class="card">
-                    <img src="images/food.jpg" alt="French Cuisine">
-                    <h3>World-Class Cuisine</h3>
-                    <p>From croissants to coq au vin, Paris is a food lover's paradise.</p>
-                </div>
-                <div class="card">
-                    <img src="images/art.jpg" alt="Art">
-                    <h3>Art & Culture</h3>
-                    <p>Home to the Louvre, Musée d'Orsay, and countless galleries.</p>
-                </div>
-                <div class="card">
-                    <img src="images/architecture.jpg" alt="Architecture">
-                    <h3>Stunning Architecture</h3>
-                    <p>Iconic landmarks and beautiful Haussmann buildings.</p>
+        <section class="section-dom">
+            <h2>DOM Manipulation</h2>
+            <div class="dom-examples">
+                <button onclick="changeContent()">Change Content</button>
+                <p id="change-text">Original Text</p>
+                
+                <img id="hover-image" src="images/profile.jpg" alt="Profile" 
+                     onmouseover="hoverEffect(true)" onmouseout="hoverEffect(false)">
+                
+                <div class="dynamic-list">
+                    <input type="text" id="new-item">
+                    <button onclick="addItem()">Add Item</button>
+                    <ul id="item-list"></ul>
                 </div>
             </div>
         </section>
-    </main>
 
-    <footer>
-        <p>&copy; 2023 Paris Tourism Board. All rights reserved.</p>
-        <div class="social-links">
-            <a href="#"><img src="images/facebook.png" alt="Facebook"></a>
-            <a href="#"><img src="images/twitter.png" alt="Twitter"></a>
-            <a href="#"><img src="images/instagram.png" alt="Instagram"></a>
-        </div>
-    </footer>
+        <section class="section-form">
+            <h2>Form Validation</h2>
+            <form id="registration-form">
+                <input type="text" id="name" placeholder="Full Name">
+                <span id="name-error" class="error"></span>
+                
+                <input type="email" id="email" placeholder="Email">
+                <span id="email-error" class="error"></span>
+                
+                <input type="tel" id="phone" placeholder="Phone Number">
+                <span id="phone-error" class="error"></span>
+                
+                <input type="password" id="password" placeholder="Password">
+                <span id="password-error" class="error"></span>
+                
+                <button type="submit">Register</button>
+            </form>
+        </section>
+
+        <section class="section-objects">
+            <h2>JavaScript Objects</h2>
+            <div class="object-examples">
+                <p id="current-date"></p>
+                <p id="random-number"></p>
+                <div id="weather-data"></div>
+            </div>
+        </section>
+
+        <section class="section-todo">
+            <h2>To-Do List</h2>
+            <div class="todo-app">
+                <input type="text" id="todo-input" placeholder="Add new task">
+                <button onclick="addTodo()">Add</button>
+                <ul id="todo-list"></ul>
+            </div>
+        </section>
+
+        <section class="section-chatbot">
+            <h2>Simple Chatbot</h2>
+            <div class="chatbot">
+                <div id="chat-messages"></div>
+                <input type="text" id="user-input" placeholder="Type your message">
+                <button onclick="sendMessage()">Send</button>
+            </div>
+        </section>
+    </div>
+
+    <script src="script.js"></script>
 </body>
 </html>
